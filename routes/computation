@@ -1,0 +1,10 @@
+var express = require('express');
+var router = express.Router();
+var x=Math.random();
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+var y=Math.atanh(x);
+  res.send(`inverse hyperbolic tangent of  ${x}  is : ${y}`);
+});
+
+module.exports = router;
